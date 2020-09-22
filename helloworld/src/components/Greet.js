@@ -11,4 +11,11 @@ import React from 'react'
 // name tag export
 // need { Geet } while importing in other files
 
-export const Greet = () => <h1>Hello Krishna</h1>
+export const Greet = props => {
+    return (
+        <div>
+            <h1>Hello,{props.name} {props.surname}</h1>
+            <p>{props.children}</p>
+        </div>
+    )
+}
